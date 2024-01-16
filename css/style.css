@@ -1,8 +1,8 @@
 body {
     background-color: rgba(255, 203, 116, 0.2);
 }
+
 .navbar {
-    grid-area: nav;
     display:flex;
     align-items: center;
     background-color:rgba(255, 203, 116, 0.2);
@@ -23,17 +23,57 @@ body {
 }
 .rainbowlogo {
     padding-left: 9px;
+    width:40px;
+     height:40px;
 }
 nav {
     flex:1;
     text-align: right;
     padding-right: 35px;
 }
+
 nav ul li {
     display: inline-block;
+    flex-direction: row;
+    text-align: right;
     margin-left: 20px;
 }
-nav ul li a {
+nav ul li {
+    text-decoration: none;
+    color: #000;
+    font-family: Jacques Francois;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+  #dropdown {
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+.dropdownlist {
+    display: none;
+    font-family: Jacques Francois;
+    font-size: 16px;
+    font-style: normal;
+}
+.dropdownlist li {
+    display: flex;
+    flex-direction: column;
+    float:center;
+    color: #113E21;
+    font-family: Jacques Francois;
+    font-size: 16px;
+    font-style: normal;
+}
+.topnavright {
     text-decoration: none;
     color: #000;
     font-family: Jacques Francois;
@@ -47,7 +87,7 @@ nav ul li a {
 .hero {
     display: flex;
     justify-content: center;
-    padding-top: 3%;
+    padding-top: 2%;
     padding-bottom: 1%;
 }
 .heroimage {
@@ -75,21 +115,17 @@ nav ul li a {
     text-transform: capitalize;
     text-align: center;
     margin-top: 46px;
-    margin-bottom: 180px;
+    margin-bottom: 150px;
 }
 .portfoliofooter{
     background-color: rgba(255, 203, 116, 0.2);
     width:100%;
     height:6%;
-    margin-top: 100px;
+    margin-top: 150x;
     margin-bottom: 0px;
 }
 
-.footeritems {
-    display: inline;
-    align-items: center;
-    margin-top: auto;
-}
+
 .quote {
     display:flex;
     margin-top: 5px;
@@ -107,18 +143,21 @@ nav ul li a {
 }
 
 .email {
-    color: var(--F7B318, #F7B318);
+    color: #113E21;
     font-family: Jacques Francois;
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     line-height: normal;
     letter-spacing: 1.4px;
     text-transform: capitalize; 
-    margin-left: 850px;
+    margin-left: 840px;
 }
 .LinkedIn {
     margin-left: 6px;
+    padding-top: 5px;
+    width:20px;
+     height:24px;
 }
 
 
@@ -138,3 +177,4 @@ nav ul li a {
     display: table;
   }
  
+  
